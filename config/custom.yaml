@@ -19,7 +19,10 @@ llm:
 
 source:
   arxiv:
-    category: ["cs.AI","cs.CV","cs.RO"]
+    category:
+      - "cs.AI"
+      - "cs.CV"
+      - "cs.RO"
 
 executor:
   debug: ${oc.env:DEBUG,null}
