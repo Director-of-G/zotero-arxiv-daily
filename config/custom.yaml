@@ -1,25 +1,25 @@
 zotero:
-  user_id: ${oc.env:ZOTERO_ID}
-  api_key: ${oc.env:ZOTERO_KEY}
+  user_id: 14436949
+  api_key: lTis0w5zmu096RXN5VFoLhVT
   include_path: null
 
 email:
-  sender: ${oc.env:SENDER}
-  receiver: ${oc.env:RECEIVER}
-  smtp_server: smtp.qq.com
+  sender: jiangy19@gmail.com
+  receiver: jyp23@mails.tsinghua.edu.cn
+  smtp_server: smtp.gmail.com
   smtp_port: 465
-  sender_password: ${oc.env:SENDER_PASSWORD}
+  sender_password: abecibarhravjchz
 
 llm:
   api:
-    key: ${oc.env:OPENAI_API_KEY}
-    base_url: ${oc.env:OPENAI_API_BASE}
+    key: sk-ypqeqxqhpzapzcokrqkgomjyxkrfbcztpvyslvjagnryksls
+    base_url: https://api.siliconflow.cn/v1
   generation_kwargs:
-    model: gpt-4o-mini
+    model: deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
 
 source:
   arxiv:
-    category: ["cs.AI","cs.CV","cs.LG","cs.CL"]
+    category: ["cs.AI","cs.CV","cs.RO"]
 
 executor:
   debug: ${oc.env:DEBUG,null}
