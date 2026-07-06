@@ -1,7 +1,11 @@
 zotero:
   user_id: ${oc.env:ZOTERO_ID}
   api_key: ${oc.env:ZOTERO_KEY}
-  include_path: null
+  include_path:
+    - "灵巧操作/grasping/**"
+    - "灵巧操作/scalable manipulation/**"
+    - "灵巧操作/learning/**"
+    - "灵巧操作/tactile/**"
 
 email:
   sender: ${oc.env:SENDER}
